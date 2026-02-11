@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iPhone Giveaway Countdown</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="image-container">
+      <img src="photo.jpeg" alt="iPhone">
+    </div>
+    <div class="content">
+      <h1>iPhone Giveaway</h1>
+      <h2>Giveaway ends on Wednesday, 18th 2026 at 12:30 AM</h2>
+      <p>We are having our biggest sales yet, do not miss out be there and enjo your free giveaway. Terms and condition applies</p>
+       <button id="registerBtn" class="cta-btn">Register for Giveaway</button>
+
+      <div class="timer">
+
+        <div id="actualtimer">
+          <div class="box">
+          <span class="number" id="days">00</span>
+          <span class="label">Days</span>
+          </div>
+
+          <div class="box">
+          <span class="number" id="hours">00</span>
+          <span class="label">Hours</span>
+          </div>
+
+          <div class="box">
+          <span class="number" id="minutes">00</span>
+          <span class="label">Minutes</span>
+          </div>
+
+          <div class="box">
+          <span class="number" id="seconds">00</span>
+          <span class="label">Seconds</span>
+          </div>
+        </div>
+
+        </div>
+
+  <script src="script.js"></script>
+
+  <div class="modal" id="registerModal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>Register for Giveaway </h3>
+
+    <form id="registerForm">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <button type="submit">Submit</button>
+    </form>
+
+    <p class="success-msg" id="successMsg"></p>
+  </div>
+</div>
+
+</body>
+</html>
